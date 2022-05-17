@@ -59,11 +59,11 @@ API
 
 `client.setAspectRatio(<string> ratio)` Set new aspect ratio from `aspectRatio`-enum. Returns Promise containing aspect ratio setting after action.
 
-`client.getAction(<string> command, <string> data)` Perform a `GET` request with `command` and optional `data`. See [commands.js](src/commands.js) for reference.
+`client.getAction(<string> command, <string> data)` Perform a `GET` request with `command` and optional `data`. See [commands.ts](src/commands.ts) for reference.
 Returns Promise of object containing raw response data as fields `version`, `category`, `community`, `command`, `dataLength`, `data`,
 and boolean flag `error` as well as `raw` response in NodeJS Buffer.
 
-`client.setAction(<string> command, <string> data)` Perform a `SET` action with `command` and optional `data`. See [commands.js](src/commands.js) for reference.
+`client.setAction(<string> command, <string> data)` Perform a `SET` action with `command` and optional `data`. See [commands.ts](src/commands.ts) for reference.
 Returns Promise of object containing raw response data similar to `getAction` response.
 
 
