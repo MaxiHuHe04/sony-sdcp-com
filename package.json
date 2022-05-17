@@ -11,7 +11,7 @@
     "url": "https://github.com/vokkim/sony-sdcp-com.git"
   },
   "scripts": {
-    "test": "mocha test/"
+    "test": "mocha --require ts-node/register/transpile-only test/**/*.ts"
   },
   "dependencies": {
     "baconjs": "^3.0.17"
